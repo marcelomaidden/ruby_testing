@@ -11,4 +11,8 @@ class Calculator
   def mult(*args)
     op(*args, :*)
   end
+
+  def div(*args)
+    op(*args, :/)
+  end
 end

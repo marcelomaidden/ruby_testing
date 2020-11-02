@@ -18,4 +18,16 @@ describe Calculator do
       expect(calculator.mult(5, 3, 2)).to eql(30)
     end
   end
+
+  describe '#divide' do
+    it "return the division of numbers" do
+      calculator = Calculator.new
+      expect(calculator.div(30, 3, 2)).to eql(5)
+    end
+
+    it "return the division of two numbers" do
+      calculator = Calculator.new
+      expect(calculator.div(30, 2)).to eql(15)
+    end
+  end
 end
