@@ -13,26 +13,26 @@ describe Calculator do
   end
 
   describe '#subtract' do
-    it "return the subtraction of numbers" do
+    it "returns the subtraction of numbers" do
       calculator = Calculator.new
       expect(calculator.sub(5, 2, 1)).to eql(2)
     end
   end
 
   describe '#multiply' do
-    it "return the multiplication of numbers" do
+    it "returns the multiplication of numbers" do
       calculator = Calculator.new
       expect(calculator.mult(5, 3, 2)).to eql(30)
     end
   end
 
   describe '#divide' do
-    it "return the division of numbers" do
+    it "returns the division of numbers" do
       calculator = Calculator.new
       expect(calculator.div(30, 3, 2)).to eql(5)
     end
 
-    it "return the division of two numbers" do
+    it "returns the division of two numbers" do
       calculator = Calculator.new
       expect(calculator.div(30, 2)).to eql(15)
     end
