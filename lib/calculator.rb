@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Calculator test used to test math operations
 class Calculator
   def op(*args, sym)

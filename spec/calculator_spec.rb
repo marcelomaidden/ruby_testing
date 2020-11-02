@@ -1,5 +1,4 @@
 # spec/calculator.rb
-# frozen_string_literal: true
 
 require './lib/calculator'
 describe Calculator do
