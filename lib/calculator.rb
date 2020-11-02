@@ -15,4 +15,8 @@ class Calculator
   def div(*args)
     op(*args, :/)
   end
+
+  def sub(*args)
+    op(*args, :-)
+  end
 end

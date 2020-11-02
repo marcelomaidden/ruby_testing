@@ -12,6 +12,13 @@ describe Calculator do
     end
   end
 
+  describe '#subtract' do
+    it "return the subtraction of numbers" do
+      calculator = Calculator.new
+      expect(calculator.sub(5, 2, 1)).to eql(2)
+    end
+  end
+
   describe '#multiply' do
     it "return the multiplication of numbers" do
       calculator = Calculator.new
