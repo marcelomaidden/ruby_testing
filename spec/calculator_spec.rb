@@ -1,29 +1,30 @@
+# frozen_string_literal: true
+
 # spec/calculator.rb
 
 require './lib/calculator'
 describe Calculator do
   calculator = Calculator.new
   describe '#add' do
-    it 'returns the sum of more than two numbers' do
-      expect(calculator.add(2, 5, 7)).to eql(14)
+    context 'Returns sum of numbers' do
+      it { expect(calculator.add(2, 5, 7)).to be_eql(14) }
+      it { expect(calculator.add(2, 5)).to be_eql(7) }
     end
   end
   describe '#subtract' do
-    it 'returns the subtraction of numbers' do
-      expect(calculator.sub(5, 2, 1)).to eql(2)
+    context 'Returns subtraction of numbers' do
+      it { expect(calculator.sub(5, 2, 1)).to be_eql(2) }
+      it { expect(calculator.sub(5, 2)).to be_eql(3) }
     end
   end
   describe '#multiply' do
-    it 'returns the multiplication of numbers' do
-      expect(calculator.mult(5, 3, 2)).to eql(30)
-    end
+    context 'returns the multiplication of numbers'
+    it { expect(calculator.mult(5, 3, 2)).to be_eql(30) }
   end
   describe '#divide' do
-    it 'returns the division of numbers' do
-      expect(calculator.div(30, 3, 2)).to eql(5)
-    end
-    it 'returns the division of two numbers' do
-      expect(calculator.div(30, 2)).to eql(15)
+    context 'returns the division of numbers' do
+      it { expect(calculator.div(30, 3, 2)).to be_eql(5) }
+      it { expect(calculator.div(30, 2)).to be_eql(15) }
     end
   end
 end
