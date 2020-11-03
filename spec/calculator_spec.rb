@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# rubocop:disable Style/FrozenStringLiteralComment
 
 # spec/calculator.rb
 
@@ -28,3 +28,5 @@ describe Calculator do
     end
   end
 end
+
+# rubocop:enable Style/FrozenStringLiteralComment

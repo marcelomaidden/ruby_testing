@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# rubocop:disable Style/FrozenStringLiteralComment
 
 # Calculator test used to test math operations
 class Calculator
@@ -23,3 +23,5 @@ class Calculator
     op(*args, :-)
   end
 end
+
+# rubocop:enable Style/FrozenStringLiteralComment
