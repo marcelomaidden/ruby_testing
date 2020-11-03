@@ -1,5 +1,3 @@
-# rubocop:disable Style/FrozenStringLiteralComment
-
 # spec/calculator.rb
 
 require './lib/calculator'
@@ -29,4 +27,3 @@ describe Calculator do
   end
 end
 
-# rubocop:enable Style/FrozenStringLiteralComment

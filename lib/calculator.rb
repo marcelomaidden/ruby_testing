@@ -1,5 +1,3 @@
-# rubocop:disable Style/FrozenStringLiteralComment
-
 # Calculator test used to test math operations
 class Calculator
   def op(*args, sym)
@@ -23,5 +21,3 @@ class Calculator
     op(*args, :-)
   end
 end
-
-# rubocop:enable Style/FrozenStringLiteralComment
