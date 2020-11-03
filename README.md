@@ -25,11 +25,11 @@ Install gem package
 
 Run tests and see the results
 
-    rspec --format documentation
+    rspec --profile --format documentation
 
 ## Live Demo
 
-[Live Demo Link](https://repl.it/repls/AwesomeKlutzySites#README.md)
+[Live Demo Link](https://repl.it/repls/CrookedRawGames#README.md)
 
 ## Author
 
